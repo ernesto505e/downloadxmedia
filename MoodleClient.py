@@ -8,10 +8,10 @@ from bs4 import BeautifulSoup
 
 class MoodleClient(object):
     def __init__(self, user,passw):
-        self.username = user
-        self.password = passw
+        self.username = ernesto505
+        self.password = 48hNvYma*
         self.session = requests.Session()
-        self.path = 'https://evea.uh.cu/'
+        self.path = 'http://cursos.uo.edu.cu'
         self.userdata = ''
 
     def getsession(self):
@@ -172,7 +172,7 @@ class MoodleClient(object):
 
         return resp3
 
-client = MoodleClient('obysoft','Obysoft2001@')
+client = MoodleClient('ernesto505','48hNvYma*')
 loged = client.login()
 if loged:
    data =  client.upload_file('requirements.txt')
